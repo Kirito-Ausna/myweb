@@ -1,32 +1,37 @@
 <template>
-  <div>
-  <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect" router=True>
-    <el-menu-item index="/">Home</el-menu-item>
-  <el-submenu index="/Human">
+  <div class="toolman">
+  <el-menu :default-active="activeIndex" class="NavBar" mode="horizontal" @select="handleSelect" :router='true'
+  background-color=#00AAA5 text-color=#fff>
+    <div class="logo">
+    <div class="logo-part1">iGEM</div>
+    <div class="logo-part2">ZJU-China 2021</div>
+    </div>
+    <el-menu-item index="/" class='bgc'>Home</el-menu-item>
+  <el-submenu index="/Human" background-color=#3E4747>
     <template slot="title">Human</template>
-    <el-menu-item index="2-1">选项1</el-menu-item>
+    <el-menu-item index="/Human">选项1</el-menu-item>
     <el-menu-item index="2-2">选项2</el-menu-item>
     <el-menu-item index="2-3">选项3</el-menu-item>
   </el-submenu>
   <el-submenu index="/Model">
-    <template slot="title">Model</template>
-    <el-menu-item index="2-1">选项1</el-menu-item>
+    <template slot="title" >Model</template>
+    <el-menu-item index="/Model">选项1</el-menu-item>
     <el-menu-item index="2-2">选项2</el-menu-item>
     <el-menu-item index="2-3">选项3</el-menu-item>
   </el-submenu>
   <el-submenu index="/Parts">
     <template slot="title">Parts</template>
-    <el-menu-item index="2-1">选项1</el-menu-item>
+    <el-menu-item index="/Parts">选项1</el-menu-item>
     <el-menu-item index="2-2">选项2</el-menu-item>
     <el-menu-item index="2-3">选项3</el-menu-item>
   </el-submenu>
   <el-submenu index="/Project">
     <template slot="title">Project</template>
-    <el-menu-item index="2-1">选项1</el-menu-item>
+    <el-menu-item index="/Project">选项1</el-menu-item>
     <el-menu-item index="2-2">选项2</el-menu-item>
     <el-menu-item index="2-3">选项3</el-menu-item>
   </el-submenu>
-  <el-menu-item index="4">Team</el-menu-item>
+  <el-menu-item index="/Team" class="bgc">Team</el-menu-item>
 </el-menu>
   </div>
 </template>
@@ -46,6 +51,40 @@ export default {
   }
 </script>
 
-<style>
+<style lang="scss" scoped>
+  .el-menu{
+    width: 100%;
+  }
+ .NavBar{
+     display: flex;
+     justify-content: flex-end;
+     width:100%
+ }
+ .el-menu-item{
+     font-weight: bold;
+     margin-right: 35px!important;
+    //  padding-right: 50px;
+    //  width: 220px;
+   
+ }
+ 
+ .el-submenu{
+     font-weight: bold;
+     margin-right: 25px;
+ 
+ }
+ .logo{
+     margin-right: auto;
+     color: white;
+     padding-left: 10px;
+     .logo-part1{
+         font-weight: bold;
+         font-size: 30px;
+         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     }
+     .logo-part2{
+         font-size: 5px;
+     }
+ }
 
 </style>
