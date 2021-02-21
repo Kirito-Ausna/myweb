@@ -12,14 +12,14 @@
 
 <style lang="scss" scoped>
     .bgpic{
-        background: url(https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3889285702,4175964916&fm=11&gp=0.jpg);
-        position: fixed;
-        top:75px;
-        // background-size: 100% 100%;
-        width:100%;
-        height: 100%;
-        background-size: cover;
-        background-position: center;
+     width: 100%;
+     height: 100vh;
+     background: url(https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1363590258,2617258036&fm=11&gp=0.jpg) no-repeat;
+     position: relative;
+    /* top: -4.625rem; */
+     background-attachment: fixed;
+     background-position: center;
+     background-size: 100% 100%;
     }
     .content{
         background-color: #fff;
