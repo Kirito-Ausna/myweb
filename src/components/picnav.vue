@@ -14,6 +14,7 @@
 .picnav-main{
     display: flex;
     margin:auto;
+    padding-top: 220px;
     .nav-item{
         width:20%;
         margin:auto;

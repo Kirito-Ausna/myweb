@@ -31,7 +31,7 @@
   li{
     list-style:none;
   }
-  html,body{
+  p,html,body{
     margin:0;
     padding: 0;
   }
