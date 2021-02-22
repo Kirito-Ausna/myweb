@@ -5,12 +5,14 @@
   <NavMenu></NavMenu>
   <div style="height: 55px;">换行</div>
   <router-view></router-view>
+  <backtop> </backtop>
   </div>
 </template>
 
 <script>
   import NavBar from './components/NavBar'
   import NavMenu from './components/NavMenu'
+  import backtop from './components/Backtop'
   export default {
     data () {
       return {
@@ -22,9 +24,9 @@
     },
     components: {
       NavBar,
-      NavMenu
+      NavMenu,
+      backtop,
     }
-
   }
 </script>
 <style lang="scss">
