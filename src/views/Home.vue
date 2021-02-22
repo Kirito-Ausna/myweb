@@ -13,16 +13,16 @@
         <div class="mainpart">
             <div class="part1">
             <img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2568440501,3447016001&fm=26&gp=0.jpg">
-            <p>
+            <div>
                 “想尝试前往，那道光芒之中”高中一年级的夏天，从离岛离家出走，来到东京的帆高。但是他的生活立马变得穷困，在度过孤独的每一天之后终于找到的工作，是为古怪的超自然杂志撰稿。
                 如同预示着他接下来的命运一般，连日不断地下雨。此时，在人潮熙熙攘攘的都市一角，帆高遇到了一位少女。
-            </p>
+            </div>
             </div>
             <div class="part2">
-            <p>
+            <div>
                 “想尝试前往，那道光芒之中”高中一年级的夏天，从离岛离家出走，来到东京的帆高。但是他的生活立马变得穷困，在度过孤独的每一天之后终于找到的工作，是为古怪的超自然杂志撰稿。
                 如同预示着他接下来的命运一般，连日不断地下雨。此时，在人潮熙熙攘攘的都市一角，帆高遇到了一位少女。
-            </p>
+            </div>
             <img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2568440501,3447016001&fm=26&gp=0.jpg">
             </div>
         </div>
@@ -43,7 +43,7 @@
         object-fit: contain;
         text-align: center;
         direction: ltr;
-        padding: 60px;
+        padding-top: 60px;
     }
     video{
         display: inline-block;
@@ -62,17 +62,17 @@
             img{
                 width: 500px;
                 padding-right: 150px;
-                flex-grow:1
+                // flex-grow:1
             }
-            p{
+            div{
                 text-align: justify;
-                width: 670px!important;
+                flex-basis: 670px!important;
                 font-size: 1.6rem!important;
                 color: #999999;
                 font-family: 'Manjari', sans-serif!important;
                 margin-block-start: 0em;
                 margin-block-end: 0em;
-                flex-grow: 2;
+                // flex-grow: 2;
             }
         }
         .part2{
@@ -87,7 +87,7 @@
                 width: 500px;
                 flex-grow:1
             }
-            p{
+            div{
                 text-align: justify;
                 width: 670px!important;
                 font-size: 1.6rem!important;
@@ -96,7 +96,7 @@
                 margin-block-start: 0em;
                 margin-block-end: 0em;
                 flex-grow: 2;
-                padding-right: 150px;
+                margin-right: 150px;
             }
         }
 
