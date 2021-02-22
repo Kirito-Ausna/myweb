@@ -1,38 +1,38 @@
 <template>
   <div class="toolman">
-  <el-menu :default-active="activeIndex" class="NavBar" mode="horizontal" @select="handleSelect" :router='true'
-  background-color=#00AAA5 text-color=#fff>
-    <div class="logo">
-    <div class="logo-part1">iGEM</div>
-    <div class="logo-part2">ZJU-China 2021</div>
-    </div>
-    <el-menu-item index="/" class='bgc'>Home</el-menu-item>
-  <el-submenu index="/Human" background-color=#3E4747>
-    <template slot="title">Human</template>
-    <el-menu-item index="/Human">选项1</el-menu-item>
-    <el-menu-item index="2-2">选项2</el-menu-item>
-    <el-menu-item index="2-3">选项3</el-menu-item>
-  </el-submenu>
-  <el-submenu index="/Model">
-    <template slot="title" >Model</template>
-    <el-menu-item index="/Model">选项1</el-menu-item>
-    <el-menu-item index="2-2">选项2</el-menu-item>
-    <el-menu-item index="2-3">选项3</el-menu-item>
-  </el-submenu>
-  <el-submenu index="/Parts">
-    <template slot="title">Parts</template>
-    <el-menu-item index="/Parts">选项1</el-menu-item>
-    <el-menu-item index="2-2">选项2</el-menu-item>
-    <el-menu-item index="2-3">选项3</el-menu-item>
-  </el-submenu>
-  <el-submenu index="/Project">
-    <template slot="title">Project</template>
-    <el-menu-item index="/Project">选项1</el-menu-item>
-    <el-menu-item index="2-2">选项2</el-menu-item>
-    <el-menu-item index="2-3">选项3</el-menu-item>
-  </el-submenu>
-  <el-menu-item index="/Team" class="bgc">Team</el-menu-item>
-</el-menu>
+    <el-menu :default-active="activeIndex" class="NavBar" mode="horizontal" @select="handleSelect" :router='true'
+    background-color=#00AAA5 text-color=#fff>
+      <div class="logo">
+      <div class="logo-part1">iGEM</div>
+      <div class="logo-part2">ZJU-China 2021</div>
+      </div>
+      <el-menu-item index="/" class='bgc'>Home</el-menu-item>
+    <el-submenu index="/Human" background-color=#3E4747>
+      <template slot="title">Human</template>
+      <el-menu-item index="/Human">选项1</el-menu-item>
+      <el-menu-item index="2-2">选项2</el-menu-item>
+      <el-menu-item index="2-3">选项3</el-menu-item>
+    </el-submenu>
+    <el-submenu index="/Model">
+      <template slot="title" >Model</template>
+      <el-menu-item index="/Model">选项1</el-menu-item>
+      <el-menu-item index="2-2">选项2</el-menu-item>
+      <el-menu-item index="2-3">选项3</el-menu-item>
+    </el-submenu>
+    <el-submenu index="/Parts">
+      <template slot="title">Parts</template>
+      <el-menu-item index="/Parts">选项1</el-menu-item>
+      <el-menu-item index="2-2">选项2</el-menu-item>
+      <el-menu-item index="2-3">选项3</el-menu-item>
+    </el-submenu>
+    <el-submenu index="/Project">
+      <template slot="title">Project</template>
+      <el-menu-item index="/Project">选项1</el-menu-item>
+      <el-menu-item index="2-2">选项2</el-menu-item>
+      <el-menu-item index="2-3">选项3</el-menu-item>
+    </el-submenu>
+    <el-menu-item index="/Team" class="bgc">Team</el-menu-item>
+    </el-menu>
   </div>
 </template>
 

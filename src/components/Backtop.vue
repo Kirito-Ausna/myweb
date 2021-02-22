@@ -1,6 +1,6 @@
 <template>
     <div class="backtop-item" v-if="isshow">
-      <img :src="require('/src/assets/logo.png')" style="width: 100%;" @click="backtop" />
+      <img :src="require('/src/assets/up-arrow.png')" style="width: 100%;" @click="backtop" />
     </div>
 </template>
 
@@ -39,6 +39,7 @@ export default {
 
 <style lang="scss" scoped>
 .backtop-item{
+    background: rgba(0,0,0,0.12);
     display: inline;
     position: fixed;
     z-index: 90;
