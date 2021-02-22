@@ -2,7 +2,7 @@
     <div>
         <div class='bgpic'>
         </div>
-        
+
         <div class="videoshow">
             <video muted width="1300px" :autoplay="true" controls loop>
                 <source src="http://47.98.210.49:82/download.mp4" type="video/mp4">
@@ -10,6 +10,9 @@
             </video>
             <!-- <iframe height=498 width=510 src='https://player.youku.com/embed/XMjkzNTUxNDY4' frameborder=0></iframe> -->
         </div>
+
+        <picnav :navs="picnavs"> </picnav>
+
         <div class="mainpart">
             <div class="part1">
             <img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2568440501,3447016001&fm=26&gp=0.jpg">
@@ -28,6 +31,33 @@
         </div>
     </div>
 </template>
+
+<script>
+import picnav from "/src/components/picnav.vue"
+export default {
+    components:{
+        picnav
+    },
+    data(){
+        return {
+            picnavs:[
+                {
+                    name:'test name1',
+                    fig:require("/src/assets/wang.jpg")
+                },
+                {
+                    name:'test name2',
+                    fig:require("/src/assets/wang.jpg")
+                },
+                {
+                    name:'test name3',
+                    fig:require("/src/assets/wang.jpg")
+                },
+            ]
+        }
+    }
+}
+</script>
 
 <style lang="scss" scoped>
     .bgpic{
