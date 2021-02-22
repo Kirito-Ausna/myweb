@@ -52,13 +52,21 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  .toolman{
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    margin: 0 auto;
+  }
   .el-menu{
     width: 100%;
   }
  .NavBar{
      display: flex;
      justify-content: flex-end;
-     width:100%
+     width:100%;
+     padding: 0;
+     margin: 0;
  }
  .el-menu-item{
      font-weight: bold;
@@ -85,6 +93,10 @@ export default {
      .logo-part2{
          font-size: 5px;
      }
+ }
+ div{
+   padding: 0;
+   margin: 0;
  }
 
 </style>

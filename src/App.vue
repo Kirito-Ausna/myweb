@@ -3,6 +3,7 @@
   <!-- <NavBar></NavBar>
   <div style="height: 75px;">换行</div> -->
   <NavMenu></NavMenu>
+  <div style="height: 55px;">换行</div>
   <router-view></router-view>
   </div>
 </template>
@@ -29,5 +30,9 @@
 <style lang="scss">
   li{
     list-style:none;
+  }
+  html,body{
+    margin:0;
+    padding: 0;
   }
 </style>
