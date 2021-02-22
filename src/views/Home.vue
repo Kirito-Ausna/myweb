@@ -11,8 +11,6 @@
             <!-- <iframe height=498 width=510 src='https://player.youku.com/embed/XMjkzNTUxNDY4' frameborder=0></iframe> -->
         </div>
 
-        <picnav :navs="picnavs"> </picnav>
-
         <div class="mainpart">
             <div class="part1">
             <img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2568440501,3447016001&fm=26&gp=0.jpg">
@@ -29,14 +27,18 @@
             <img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2568440501,3447016001&fm=26&gp=0.jpg">
             </div>
         </div>
+        <picnav :navs="picnavs"> </picnav>
+        <Bottom></Bottom>
     </div>
 </template>
 
 <script>
 import picnav from "/src/components/picnav.vue"
+import Bottom from "/src/components/Bottom.vue"
 export default {
     components:{
-        picnav
+        picnav,
+        Bottom
     },
     data(){
         return {
@@ -91,7 +93,7 @@ export default {
             justify-content: space-between;
             img{
                 width: 500px;
-                padding-right: 150px;
+                padding-right: 100px;
                 // flex-grow:1
             }
             div{
@@ -126,7 +128,7 @@ export default {
                 margin-block-start: 0em;
                 margin-block-end: 0em;
                 flex-grow: 2;
-                margin-right: 150px;
+                margin-right: 100px;
             }
         }
 
