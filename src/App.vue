@@ -2,7 +2,7 @@
   <div id='app'>
     <NavMenu></NavMenu>
     <!-- <div style="height: 55px;">换行</div> -->
-    <div :class="{'wrapper':true, 'isbottom':isbottom}" ref="wrapper">
+    <div :class="{'wrapper':true, 'isbottom':isbottom}" :style="styleobj" ref="wrapper">
       <router-view></router-view>
       <Bottom></Bottom>
     </div>
@@ -26,7 +26,10 @@
         isbottom:false,
         scrollTop:0,
         clientHeight:0,
-        scrollHeight:0
+        scrollHeight:0,
+        styleobj:{
+          // transform: 'translateY(0px)',
+        }
       }
     },
     mounted () {
@@ -38,12 +41,15 @@
           this.scrollTop = document.documentElement.scrollTop||document.body.scrollTop;
           this.clientHeight = document.documentElement.clientHeight || document.body.clientHeight;
           this.scrollHeight = document.documentElement.scrollHeight||document.body.scrollHeight;
+          console.log( this.scrollTop,this.clientHeight,this.scrollHeight )
           if(this.scrollTop + this.clientHeight >= this.scrollHeight - 1){
           // if(document.documentElement.scrollTop + document.documentElement.clientHeight >= document.body.scrollHeight){
             this.isbottom=true
+            this.styleobj.transform = 'translateY(' + (document.documentElement.scrollTop * 0.05 - 250) + 'px) scale(0.9)'
             // console.log('is bottom')
           }else{
             this.isbottom=false
+            this.styleobj.transform = ''
             // console.log('is not bottom')
           }
         },
@@ -89,7 +95,8 @@ body{
   background:white;
 }
 .isbottom{
-  transform: translateY(-60px) scale(0.93);
+  // transform: translateY(0px) scale(0.9);
+  // 改成styleobj动态绑定了
   cursor: pointer;
 }
 </style>
