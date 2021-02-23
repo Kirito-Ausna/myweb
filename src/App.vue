@@ -89,7 +89,7 @@ body{
   background:white;
 }
 .isbottom{
-  transform: translateY(-60px) scale(0.9);
+  transform: translateY(-60px) scale(0.93);
   cursor: pointer;
 }
 </style>
