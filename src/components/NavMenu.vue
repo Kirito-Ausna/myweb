@@ -18,7 +18,7 @@
       <el-menu-item index="/Model">Model</el-menu-item>
       <el-menu-item index="2-2">Hardware</el-menu-item>
     </el-submenu>
-    <el-menu-item index="/Human" class="bgc">Team</el-menu-item>
+    <el-menu-item index="/Human" class="bgc">Human</el-menu-item>
     </el-menu>
   </div>
 </template>
