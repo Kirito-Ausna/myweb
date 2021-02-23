@@ -39,9 +39,7 @@
             width:30%;
         }
     }
-    .downside{
-        // margin-bottom: 5%;
-    }
+    
     margin:5% 10% 2% 10%;
     z-index:1;
     bottom:0;

@@ -4,6 +4,7 @@
     <!-- <div style="height: 55px;">换行</div> -->
     <div :class="{'wrapper':true, 'isbottom':isbottom}" ref="wrapper">
       <router-view></router-view>
+      <Bottom></Bottom>
     </div>
 
     <backtop> </backtop>
@@ -18,6 +19,7 @@
   import NavMenu from './components/NavMenu'
   import backtop from './components/Backtop'
   import myfooter from "./components/Myfooter"
+  import Bottom from "/src/components/Bottom.vue"
   export default {
     data () {
       return {
@@ -51,6 +53,7 @@
       NavMenu,
       backtop,
       myfooter,
+      Bottom,
     }
   }
 </script>

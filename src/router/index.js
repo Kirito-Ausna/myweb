@@ -3,9 +3,10 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Human from '../views/Human.vue'
 import Model from '../views/Model.vue'
-import Parts from '../views/Parts.vue'
-import Project from '../views/Project.vue'
-import Team from '../views/Team.vue'
+import Biodesign from '../views/Biodesign.vue'
+import Feasibility from '../views/Feasibility.vue'
+import Background from '../views/Background.vue'
+import Hardware from '../views/Hardware.vue'
 
 Vue.use(VueRouter)
 
@@ -29,19 +30,24 @@ const routes = [
     component: Model
   },
   {
-    path: '/Parts',
-    name: 'Parts',
-    component: Parts
+    path: '/Background',
+    name: 'Background',
+    component: Background
   },
   {
-    path: '/Project',
-    name: 'Project',
-    component: Project
+    path: '/Feasibility',
+    name: 'Feasibility',
+    component: Feasibility
   },
   {
-    path: '/Team',
-    name: 'Team',
-    component: Team
+    path: '/Biodesign',
+    name: 'Biodesign',
+    component: Biodesign
+  },
+  {
+    path:'/Hardware',
+    name:'Hardware',
+    component:Hardware
   },
   {
     path: '*',
@@ -50,7 +56,7 @@ const routes = [
 ]
 
 const router = new VueRouter({
-  mode: 'hash',
+  mode: 'history',
   base: process.env.BASE_URL,
   routes
 })

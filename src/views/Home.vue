@@ -28,17 +28,17 @@
             </div>
         </div>
         <picnav :navs="picnavs"> </picnav>
-        <Bottom></Bottom>
+        <!-- <Bottom></Bottom> -->
     </div>
 </template>
 
 <script>
 import picnav from "/src/components/picnav.vue"
-import Bottom from "/src/components/Bottom.vue"
+// import Bottom from "/src/components/Bottom.vue"
 export default {
     components:{
         picnav,
-        Bottom
+        // Bottom
     },
     data(){
         return {

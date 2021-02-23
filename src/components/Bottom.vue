@@ -73,6 +73,7 @@ export default {
                 line-height: 3.75rem;
                 p{
                     line-height: 1.875rem;
+                    margin:0
                 }
             }
         }

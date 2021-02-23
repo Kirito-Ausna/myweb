@@ -7,31 +7,18 @@
       <div class="logo-part2">ZJU-China 2021</div>
       </div>
       <el-menu-item index="/" class='bgc'>Home</el-menu-item>
-    <el-submenu index="/Human" background-color=#3E4747>
-      <template slot="title">Human</template>
-      <el-menu-item index="/Human">选项1</el-menu-item>
-      <el-menu-item index="2-2">选项2</el-menu-item>
-      <el-menu-item index="2-3">选项3</el-menu-item>
-    </el-submenu>
-    <el-submenu index="/Model">
-      <template slot="title" >Model</template>
-      <el-menu-item index="/Model">选项1</el-menu-item>
-      <el-menu-item index="2-2">选项2</el-menu-item>
-      <el-menu-item index="2-3">选项3</el-menu-item>
-    </el-submenu>
-    <el-submenu index="/Parts">
+      <el-menu-item index="/Background" class="bgc">Background</el-menu-item>
+    <el-submenu index="/Parts" background-color=#3E4747>
       <template slot="title">Parts</template>
-      <el-menu-item index="/Parts">选项1</el-menu-item>
-      <el-menu-item index="2-2">选项2</el-menu-item>
-      <el-menu-item index="2-3">选项3</el-menu-item>
+      <el-menu-item index="/Biodesign">Biodesign</el-menu-item>
+      <el-menu-item index="/Feasibility">Feasibility</el-menu-item>
     </el-submenu>
-    <el-submenu index="/Project">
-      <template slot="title">Project</template>
-      <el-menu-item index="/Project">选项1</el-menu-item>
-      <el-menu-item index="2-2">选项2</el-menu-item>
-      <el-menu-item index="2-3">选项3</el-menu-item>
+    <el-submenu index="/Projects">
+      <template slot="title" >Projects</template>
+      <el-menu-item index="/Model">Model</el-menu-item>
+      <el-menu-item index="2-2">Hardware</el-menu-item>
     </el-submenu>
-    <el-menu-item index="/Team" class="bgc">Team</el-menu-item>
+    <el-menu-item index="/Human" class="bgc">Team</el-menu-item>
     </el-menu>
   </div>
 </template>
