@@ -3,8 +3,11 @@
     <NavMenu></NavMenu>
     <!-- <div style="height: 55px;">换行</div> -->
     <div :class="{'wrapper':true, 'isbottom':isbottom}" :style="styleobj" ref="wrapper">
-      <router-view></router-view>
+      <transition name="router" mode="out-in">
+        <router-view></router-view>
+      </transition>
       <Bottom></Bottom>
+      <!-- Bottom就是Contact us -->
     </div>
 
     <backtop> </backtop>
@@ -41,9 +44,8 @@
           this.scrollTop = document.documentElement.scrollTop||document.body.scrollTop;
           this.clientHeight = document.documentElement.clientHeight || document.body.clientHeight;
           this.scrollHeight = document.documentElement.scrollHeight||document.body.scrollHeight;
-          console.log( this.scrollTop,this.clientHeight,this.scrollHeight )
+          // console.log( this.scrollTop,this.clientHeight,this.scrollHeight )
           if(this.scrollTop + this.clientHeight >= this.scrollHeight - 1){
-          // if(document.documentElement.scrollTop + document.documentElement.clientHeight >= document.body.scrollHeight){
             this.isbottom=true
             this.styleobj.transform = 'translateY(' + (document.documentElement.scrollTop * 0.05 - 250) + 'px) scale(0.9)'
             // console.log('is bottom')
@@ -83,6 +85,15 @@ body{
   transition: all 0.6s;
 }
 .footer-enter-to{
+  opacity: 1;
+}
+.router-enter{
+  opacity:0;
+}
+.router-enter-active{
+  transition: all 0.8s ease;
+}
+.router-enter-to{
   opacity: 1;
 }
 .wrapper{
