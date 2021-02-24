@@ -1,9 +1,11 @@
 <template>
     <div>
         <div class='bgpic'>
+             <transition name="el-fade-in-linear">
             <div class="animated" v-if="isshow">
                 <img src="../assets/Arrow.png" alt="" class="arrow">
             </div>
+             </transition>
         </div>
 
         <div class="videoshow">
@@ -97,7 +99,7 @@ export default {
     .bgpic{
      width: 100%;
      height: 100vh;
-     background: url(https://i0.hdslb.com/bfs/article/2ef8e5897dc75d81aec22f293b7f82f7bbf15a56.jpg@1320w_780h.webp) no-repeat;
+     background: url(../assets/HomeBg.jpeg) no-repeat;
      position: relative;
      background-attachment: fixed;
      background-position: center;
