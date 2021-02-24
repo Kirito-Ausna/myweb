@@ -20,9 +20,13 @@
         font-family: 'Sansita',sans-serif;
         list-style-type: none;
         position:fixed;
-        padding-top: 5%;
-        padding-left: 3%;
+        padding-top: 10%;
+        padding-left: 2%;
+        li{
+          padding-top:1em;
+        }
         a{
+            margin:1em;
             text-align: left;
             font-size: 1.2rem;
             color: #767676;
@@ -35,19 +39,6 @@
             }
         }
     }
-    // margin-top: 5%;
-    // margin-left:5%;
-    // // position:absolute;
-    // div a{
-    //     transition: color 100ms linear;
-    //     text-decoration: none;
-    //     &:link, &:visited{
-    //         color:black
-    //     }
-    //     &:hover, &:active{
-    //         color: yellowgreen
-    //     }
-    // }
 }
 </style>
 

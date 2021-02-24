@@ -6,14 +6,14 @@
             <div class="box-item">
                 <ul>
                     <li>IGEM Team1</li>
-                    <li>Develop by Waston</li>
+                    <li>Developed by <i>Watson</i></li>
                 </ul>
             </div>
         </div>
         <div class="downside">
             <!-- <hr> -->
             <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by
-            <a href="https://github.com/Kirito-Ausna" class="mylink">Kirito-Ausna</a>.
+            <a href="https://space.bilibili.com/32772424" class="mylink">handsome12138</a>.
             </p>
             <p>
                 <a href="http://beian.miit.gov.cn" target="_blank" rel="noreferrer noopener" class="mylink">浙ICP备2020043314号</a>

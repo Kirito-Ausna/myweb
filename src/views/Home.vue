@@ -49,8 +49,8 @@
             </div>
         </div>
         <div class="animated-sec">
-                <img src="../assets/Arrow.png" alt="" class="arrow">
-            </div>
+            <img src="../assets/Arrow.png" alt="" class="arrow">
+        </div>
         <picnav :navs="picnavs"> </picnav>
         <!-- <Bottom></Bottom> -->
     </div>
