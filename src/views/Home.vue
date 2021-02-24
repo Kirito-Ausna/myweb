@@ -1,6 +1,9 @@
 <template>
     <div>
         <div class='bgpic'>
+            <div class="animated" v-if="isshow">
+                <img src="../assets/Arrow.png" alt="" class="arrow">
+            </div>
         </div>
 
         <div class="videoshow">
@@ -27,6 +30,9 @@
             <img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2568440501,3447016001&fm=26&gp=0.jpg">
             </div>
         </div>
+        <div class="animated-sec">
+                <img src="../assets/Arrow.png" alt="" class="arrow">
+            </div>
         <picnav :navs="picnavs"> </picnav>
         <!-- <Bottom></Bottom> -->
     </div>
@@ -44,18 +50,44 @@ export default {
         return {
             picnavs:[
                 {
-                    name:'test name1',
-                    fig:require("/src/assets/wang.jpg")
+                    name:'Background',
+                    fig:require("/src/assets/project.png"),
+                    location:'/Background'
                 },
                 {
-                    name:'test name2',
-                    fig:require("/src/assets/wang.jpg")
+                    name:'Model',
+                    fig:require("/src/assets/model.png"),
+                    location:'/Model'
                 },
                 {
-                    name:'test name3',
-                    fig:require("/src/assets/wang.jpg")
+                    name:'Human',
+                    fig:require("/src/assets/humanpractice.png"),
+                    location:'/Human'
                 },
-            ]
+                {
+                    name:'Hardware',
+                    fig:require("/src/assets/Hardware.png"),
+                    location:'/Hardware'
+                },
+                {
+                    name:'Parts',
+                    fig:require("/src/assets/parts.png"),
+                    location:'/Biodesign'
+                }
+            ],
+            isshow:true,
+            scrollTop: 0
+        }
+    },
+    mounted () {
+        window.addEventListener('scroll', this.handleScroll, true)
+    },
+    methods:{
+        handleScroll() {
+        // const that = this
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+        this.scrollTop = scrollTop;
+        this.isshow = scrollTop>60?false:true;
         }
     }
 }
@@ -70,6 +102,61 @@ export default {
      background-attachment: fixed;
      background-position: center;
      background-size: 100% 100%;
+    }
+    .animated{
+        font-size: 5.3125rem;
+        text-align: center;
+        width: 100%;
+        height: 6.25rem;
+        margin: 0.5625rem auto;
+        -webkit-animation: bounce-up 1.4s linear infinite;
+        animation: bounce-up 1.4s linear infinite;
+        position: absolute;
+        bottom: 0;
+        z-index: 1;
+        img{
+            width: 6.5625rem;
+            height: 4.875rem;
+        }
+     }
+     .animated-sec{
+        font-size: 5.3125rem;
+        text-align: center;
+        width: 100%;
+        height: 6.25rem;
+        margin: 11.85rem auto;
+        -webkit-animation: bounce-up 1.4s linear infinite;
+        animation: bounce-up 1.4s linear infinite;
+        z-index: 1;
+        img{
+            width: 6.5625rem;
+            height: 4.875rem;
+        }
+     }
+    @keyframes bounce-up
+    {
+        25% {
+            transform: translateY(1.25rem);
+        }
+        50%, 100% {
+            transform: translateY(0);
+        }
+        75% {
+            transform: translateY(-1.25rem);
+        }
+    }
+
+    @-webkit-keyframes bounce-up /*Safari and Chrome*/
+    {
+        25% {
+            transform: translateY(1.25rem);
+        }
+        50%, 100% {
+            transform: translateY(0);
+        }
+        75% {
+            transform: translateY(-1.25rem);
+        }
     }
     .videoshow{
         object-fit: contain;

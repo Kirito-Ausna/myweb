@@ -6,19 +6,19 @@
         </p>
     <div class="left-part">
         <div class="contactway">
-            <img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1716172314,2857133399&fm=26&gp=0.jpg" class="picture">
+            <img src="../assets/facebook.png" class="picture">
             <div class="name">TEAM ZJU_China</div>
         </div>
         <div class="contactway">
-            <img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1716172314,2857133399&fm=26&gp=0.jpg" class="picture">
+            <img src="../assets/Twitter.png" class="picture">
             <div class="name">TEAM ZJU_China</div>
         </div>
         <div class="contactway">
-            <img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1716172314,2857133399&fm=26&gp=0.jpg" class="picture">
+            <img src="../assets/email.png" class="picture">
             <div class="name">igemzju@gmail.com</div>
         </div>
         <div class="contactway">
-            <img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1716172314,2857133399&fm=26&gp=0.jpg" class="picture">
+            <img src="../assets/location.png" class="picture">
             <div class="name">
                <p> Zhejiang University, Zhejiang, Chnia</p>
                <p>Zijingang Campus:No.866 Yuhangtang Road, Xihu District, Hangzhou</p>

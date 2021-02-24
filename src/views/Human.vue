@@ -32,7 +32,7 @@
         <section class="relatedlaws">
              <a class="anchor" name="相关法规" id="相关法规"></a>
             <div class="headline">相关法规</div>
-            <p class="content">《农业转基因生物安全评价管理办法》</p>
+            <p class="subhead">《农业转基因生物安全评价管理办法》</p>
             <p class="content">第八条转基因植物种子、种畜禽、水产种苗，利用农业转基因生物生产的或者含有农业转基因生物成份的种子、种畜禽、水产种苗、农药、兽药、肥料和添加剂等，在依照有关法律、行政法规的规定进行审定、登记或者评价、审批前，应当依照本办法的规定取得农业转基因生物安全证书。</p>
             <p class="content">第十条农业转基因生物安全评价和安全等级的确定按以下步骤进行：</p>
             <p class="content">(一)确定受体生物的安全等级；</p>

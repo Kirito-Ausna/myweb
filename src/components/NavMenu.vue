@@ -9,16 +9,13 @@
       <el-menu-item index="/" class='bgc'>Home</el-menu-item>
       <el-menu-item index="/Background" class="bgc">Background</el-menu-item>
     <el-submenu index="/Parts" background-color=#3E4747>
-      <template slot="title">Parts</template>
-      <el-menu-item index="/Biodesign">Biodesign</el-menu-item>
-      <el-menu-item index="/Feasibility">Feasibility</el-menu-item>
-    </el-submenu>
-    <el-submenu index="/Projects">
-      <template slot="title" >Projects</template>
+      <template slot="title">Design</template>
+      <el-menu-item index="/Biodesign">Parts</el-menu-item>
       <el-menu-item index="/Model">Model</el-menu-item>
       <el-menu-item index="/Hardware">Hardware</el-menu-item>
     </el-submenu>
-    <el-menu-item index="/Human" class="bgc">Human</el-menu-item>
+    <el-menu-item index="/Feasibility" class="bgc">Development</el-menu-item>
+     <el-menu-item index="/Human" class="bgc">Human</el-menu-item>
     </el-menu>
   </div>
 </template>
