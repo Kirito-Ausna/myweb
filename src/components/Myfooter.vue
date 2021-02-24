@@ -13,7 +13,8 @@
         <div class="downside">
             <!-- <hr> -->
             <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by
-            <a href="https://space.bilibili.com/32772424" class="mylink">handsome12138</a>.
+            <a href="https://github.com/Kirito-Ausna" class="mylink">Kirito-Ausna
+</a>.
             </p>
             <p>
                 <a href="http://beian.miit.gov.cn" target="_blank" rel="noreferrer noopener" class="mylink">浙ICP备2020043314号</a>
