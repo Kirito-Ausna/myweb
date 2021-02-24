@@ -18,18 +18,34 @@
 
         <div class="mainpart">
             <div class="part1">
-            <img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2568440501,3447016001&fm=26&gp=0.jpg">
+            <img src="../assets/HomePic.jpg">
             <div>
-                “想尝试前往，那道光芒之中”高中一年级的夏天，从离岛离家出走，来到东京的帆高。但是他的生活立马变得穷困，在度过孤独的每一天之后终于找到的工作，是为古怪的超自然杂志撰稿。
-                如同预示着他接下来的命运一般，连日不断地下雨。此时，在人潮熙熙攘攘的都市一角，帆高遇到了一位少女。
+               Locust plagues threaten agricultural and environmental safety throughout the world. To solve this problem, we design a project, which consists of two devices, one is aiming for detecting the number of locusts, and the other is designed for the aggregation and killing.
             </div>
             </div>
             <div class="part2">
             <div>
-                “想尝试前往，那道光芒之中”高中一年级的夏天，从离岛离家出走，来到东京的帆高。但是他的生活立马变得穷困，在度过孤独的每一天之后终于找到的工作，是为古怪的超自然杂志撰稿。
-                如同预示着他接下来的命运一般，连日不断地下雨。此时，在人潮熙熙攘攘的都市一角，帆高遇到了一位少女。
+                The detection device works through an olfactory receptor responding to 4VA, which is expressed in the cell-free system. The receptor and its co-receptor are loaded on the recombinant lipid bilayer. When detecting abnormally high 4VA, the electric signals will be converted into light signals, then trigger corresponding response in the other part.
             </div>
-            <img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2568440501,3447016001&fm=26&gp=0.jpg">
+            <img src="../assets/HomePic.jpg">
+            </div>
+            <div class="part1">
+            <img src="../assets/HomePic.jpg">
+            <div>
+                The engineering bacteria of guaiacol synthesis will subsequently respond to the light signals, produce guaiacol, and then attract locusts. Bacillus subtilis is used as a chassis organism. Additionally, the oil spraying equipment of Metarhizium anisopliae is controlled by the light signal.
+            </div>
+            </div>
+            <div class="part2">
+            <div>
+                Once the 4VA in the air is higher than the normal value, the equipment will start spraying oil, infecting locusts, thus eliminating the incidence of locust plague.
+            </div>
+            <img src="../assets/HomePic.jpg">
+            </div>
+            <div class="part1">
+            <img src="../assets/HomePic.jpg">
+            <div>
+                For biosafety, we introduce a temperature-controlled suicide switch and an ultraviolet-controlled suicide switch, so the engineered bacteria will automatically die when exposed to low temperature or ultraviolet light.
+            </div>
             </div>
         </div>
         <div class="animated-sec">
@@ -174,7 +190,7 @@ export default {
         width: 100%;
         .part1{
             padding-top:220px;
-            width: 60.25rem;
+            width: 66.25rem;
             height: 28.75rem;
             margin: 0 auto;
             display: flex;
@@ -194,11 +210,12 @@ export default {
                 margin-block-start: 0em;
                 margin-block-end: 0em;
                 // flex-grow: 2;
+                padding-top:2rem;
             }
         }
         .part2{
             padding-top:220px;
-            width: 60.25rem;
+            width: 66.25rem;
             height: 28.75rem;
             margin: 0 auto;
             display: flex;
@@ -218,6 +235,7 @@ export default {
                 margin-block-end: 0em;
                 flex-grow: 2;
                 margin-right: 100px;
+                padding-top:2rem;
             }
         }
 

@@ -31,7 +31,7 @@
                 color:black
             }
             &:hover, &:active{
-                color: yellowgreen
+                color:#00AAA5
             }
         }
     }
