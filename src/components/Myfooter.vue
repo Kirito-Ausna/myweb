@@ -6,7 +6,7 @@
             <div class="box-item">
                 <ul>
                     <li>IGEM Team1</li>
-                    <li>Develop by qcs</li>
+                    <li>Developed by <i>Watson</i></li>
                 </ul>
             </div>
         </div>

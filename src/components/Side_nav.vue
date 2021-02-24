@@ -21,7 +21,7 @@
         list-style-type: none;
         position:fixed;
         padding-top: 10%;
-        padding-left: 3%;
+        padding-left: 2%;
         li{
           padding-top:1em;
         }
