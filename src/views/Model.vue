@@ -1,9 +1,11 @@
 <template>
     <div>
+        <sidenav :navs="mynav" class="sidenav"> </sidenav>
         <div class='bgpic'>
         </div>
         <div class="mainpart">
         <section class="Detection">
+        <a class="anchor" name="Detection part" id="Detection-part"></a>
         <div class="headline">Detection part</div>
         <div class="subhead">Introduction</div>
         <p class="content">We use the OR-ORco system to detect the 4Va concentration in the collected air. This method detects the signal by specifically binding and opening ion channels with 4Va that penetrates into the solution and the insect’s olfactory receptors, resulting in a voltage difference.
@@ -60,6 +62,7 @@
         <p class="content">We observe the influence of gas flow time on signal intensity at the same time in a continuous concentration gradient range, and get the heat map in Figure 3. Figure 3 reflects the distribution of signal intensity in a continuous concentration range, and the standard curve can be obtained from the heat map distribution at a certain point in time. It is worth noting that the increase in signal intensity within a certain period of time after the concentration changes from 500 X to 1000 X is not obvious. According to this heat map, we can artificially adjust the gas flow speed of the device to amplify the signal difference.</p>
         </section>
         <section class="Light">
+            <a class="anchor" name="Light regulation part" id="regulation-part"></a>
             <div class="headline">Light regulation part</div>
             <div class="subhead">Introduction</div>
             <p class="content">Our team applicates the CarH system into the production of dsRNA. The goal is to Precisely control the release of signals. We then turn to investigate an alternative protein that might be better suited for real-time control.</p>
@@ -110,6 +113,7 @@
         <p class="content">Figure 2 illustrates the rapid conversion of CarH tetramer into CarH monomer after turning on green light. The RNA in the conditions is provided in a limited amount, which is to simulate the limitation of the number of engineering bacteria. With the consumption of CarH RNA, the amount of CarH monomer is slowly degraded. In summary, the light control effect is good.</p>
         <p class="content">Figure 3 is our further idea of the light control effect. In a certain period of time, we hope to increase the light intensity to control the engineered bacteria to express more target proteins. We used 3μ, 4μ, and 5μ light intensity respectively. It can be seen from the results that the light intensity does not affect the production rate of the terminal product, but it is possible to synthesize more target products in a longer time through a limited number of engineered bacterial populations.</p>
         </section>
+        <a class="anchor" name="Reference" id="Reference"></a>
         <div class="headline">参考文献</div>
         <div class="reference">
             [1]https://2019.igem.org/Team:Peking/Model#Regulatory<br> 
@@ -121,6 +125,9 @@
 </template>
 
 <style lang="scss" scoped>
+     .sidenav{
+    width:15%;
+  }
     .bgpic{
      width: 100%;
      height: 100vh;
@@ -134,6 +141,13 @@
         margin: 0 15vw 5rem;
         width: 70vw;
         text-align: left;
+        .anchor{
+        position: relative;
+        top: -44px; // 偏移值
+        display: block;
+        height: 0;
+        overflow: hidden;
+        }   
         .headline{
             font-size: 2rem;
             margin-bottom: 1vw;
@@ -200,7 +214,7 @@
             }
             .Sec-equ1{
                 width: 40rem;
-                padding-right: 2rem;
+                padding-right: 0rem;
             }
         }
         .table{
@@ -217,3 +231,30 @@
        
     }
 </style>
+
+<script>
+import sidenav from '../components/Side_nav'
+export default {
+    data(){
+        return{
+            mynav:[
+                {
+                   name:"Detection",
+                   id:"Detection-part"
+                 },
+                 {
+                    name:"Light regulation",
+                    id:"regulation-part"
+                 },
+                 {
+                     name:"Reference",
+                     id:"Reference"
+                 }
+            ]
+        }
+    },
+    components:{
+        sidenav
+    }
+}
+</script>

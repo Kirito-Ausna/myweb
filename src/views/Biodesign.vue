@@ -1,14 +1,17 @@
 <template>
 <div>
+     <sidenav :navs="mynav" class="sidenav"> </sidenav>
      <div class='bgpic'>
     </div>
     <div class="mainpart">
     <section>
+         <a class="anchor" name="概述" id="概述"></a>
         <div class="headline">概述</div>
         <p class="content">防“蝗”于未然这个项目是想在蝗虫聚集初期解决蝗灾的萌芽，我们将项目的内容分成两大板块：检测和聚集灭杀。检测依赖的是基于昆虫嗅觉受体的高灵敏度VOC检测器，能够通过蝗虫的信息素准确地确定农田中的蝗虫密度。而聚集部分则是由合成愈创木酚（guaiacol）的工程菌构成的，灭杀部分采用的是光响应的绿僵菌油剂喷洒设备。
         </p>
     </section>
     <section class="test">
+         <a class="anchor" name="检测" id="检测"></a>
         <div class="headline">检测</div>
         <div class="subhead">概述</div>
         <p class="content">蝗虫在达到一定种群密度的时候，会由于后腿相互接触从散居型变化为群居型[1]，并且释放的群聚信息素会有浓度变化。我们打算采用最近发现的4VA[2]作为检测浓度变化的信息素。这种信息素的受体是OR35（GenBank: KP843355.1）并且在4-5个蝗虫聚集时就会开始释放。同时4VA的浓度会随着种群密度的增加而增加，可以对空气中的4VA进行量化并且测定出环境中蝗虫的种群密度。</p>
@@ -29,6 +32,7 @@
         <p class="content">作为传感受体，我们使用了OR35-LmigOrco，前者是特异性感应4VA的嗅觉受体，后者是形成配体门控离子通道的蝗虫嗅觉受体。OR-Orco的制备是利用重组的无细胞翻译系统，将OR-Orco转移到蛋白脂质体上，并通过凝胶电泳检测其存在。</p>
     </section>
     <section class="aggregatekill">
+         <a class="anchor" name="聚集灭杀" id="聚集灭杀"></a>
         <div class="headline">聚集灭杀</div>
         <div class="subhead">概述</div>
         <p class="content">我们试图采用另外一种吸引蝗虫聚集的信息素来将蝗虫聚集在装置附近，从而使得灭杀能够顺利进行。愈创木酚具有符合我们要求的特性：剂量依赖性地聚集蝗虫[5]；目前已经知道合成途径[6]并且能够在底盘生物中合成；高浓度时对人类没有毒害作用。</p>
@@ -49,6 +53,7 @@
         </p>
     </section>
     <section class="biosafety">
+         <a class="anchor" name="生物安全" id="生物安全"></a>
         <div class="headline">生物安全</div>
         <div class="content">由于工程菌可能存在泄露的风险，我们设计了温控自杀开关和紫外自杀开关两种自杀开关以确保其进入自然环境时开启凋亡。</div>
         <div class="subhead">紫外自杀开关</div>
@@ -56,6 +61,7 @@
         <div class="content">核酸酶锚定在细胞膜上，UVR-8 / COP1蛋白复合物形成时，TEV蛋白酶被重构，具有针对特定TEV识别位点的蛋白酶活性，继而使核酸酶从膜中释放出来，降解基因组DNA使芽孢杆菌凋亡。</div>
         <div class="subhead">温控自杀开关</div>
         <div class="content">芽孢杆菌的最适生长温度约30-37摄氏度。λpL/pR-cI857 温控制系统统在高于 30 ℃时，阻遏蛋白 cI857 因热失活，并引起下游基因的表达[13]。所以我们采用该温度敏感性启动子，在我们的培养条件下（37摄氏度左右），该启动子诱导抗毒素RelB的产生，而毒素的产生是由常规的组成性表达启动子控制的。当释放到环境中，温度降低时，抗毒素不表达，细菌因过量的毒素RelE而死亡。</div>
+         <a class="anchor" name="参考文献" id="参考文献"></a>
         <div class="headline">参考文献</div>
         <div class="reference">
             [1]Wang X, Kang L. Molecular mechanisms of phase change in locusts. Annu Rev Entomol. 2014;59:225-244. https://doi.org/10.1146/annurev-ento-011613-162019
@@ -92,6 +98,9 @@
 </template>
 
 <style lang="scss" scoped>
+    .sidenav{
+    width:15%;
+  }
     .bgpic{
      width: 100%;
      height: 100vh;
@@ -105,6 +114,13 @@
         margin: 0 15vw 5rem;
         width: 70vw;
         text-align: left;
+        .anchor{
+            position: relative;
+            top: -44px; // 偏移值
+            display: block;
+            height: 0;
+            overflow: hidden;
+        }
         .headline{
             font-size: 2rem;
             margin-bottom: 1vw;
@@ -156,3 +172,37 @@
         }
     }
 </style>
+<script>
+import sidenav from '../components/Side_nav'
+export default {
+    data(){
+        return{
+            mynav:[
+                {
+                    name:"概述",
+                    id:"概述"
+                },
+                {
+                    name:"检测",
+                    id:"检测"
+                },
+                {
+                    name:"聚集灭杀",
+                    id:"聚集灭杀"
+                },
+                {
+                    name:"生物安全",
+                    id:"生物安全"
+                },
+                {
+                    name:"参考文献",
+                    id:"参考文献"
+                }
+            ]
+        }
+    },
+    components:{
+        sidenav
+    }
+}
+</script>
