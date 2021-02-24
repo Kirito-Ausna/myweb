@@ -1,9 +1,11 @@
 <template>
     <div>
         <div class='bgpic'>
+             <transition name="el-fade-in-linear">
             <div class="animated" v-if="isshow">
                 <img src="../assets/Arrow.png" alt="" class="arrow">
             </div>
+             </transition>
         </div>
 
         <div class="videoshow">

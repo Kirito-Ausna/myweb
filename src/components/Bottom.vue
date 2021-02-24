@@ -11,7 +11,7 @@
         </div>
         <div class="contactway">
             <img src="../assets/Twitter.png" class="picture">
-            <div class="name">TEAM ZJU_China</div>
+            <div class="name">@Team1_ZJUigemWP</div>
         </div>
         <div class="contactway">
             <img src="../assets/email.png" class="picture">
