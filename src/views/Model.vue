@@ -114,6 +114,43 @@
         <p class="content">Figure 3 is our further idea of the light control effect. In a certain period of time, we hope to increase the light intensity to control the engineered bacteria to express more target proteins. We used 3μ, 4μ, and 5μ light intensity respectively. It can be seen from the results that the light intensity does not affect the production rate of the terminal product, but it is possible to synthesize more target products in a longer time through a limited number of engineered bacterial populations.</p>
         </section>
         <a class="anchor" name="Reference" id="Reference"></a>
+        <section class="homework">
+            <a class="anchor" name="Homework" id="HW"></a>
+            <div class="headline">Homework</div>
+            <div class="subhead">Introduction</div>
+            <p class="content">The designed circuit in cell A is under control of a temperature sensitive cI repressor. Upon raising the temperature, cI will dissociate from the promoter and the circuit is activated. This leads to the initiation of the production of LuxR and LuxI. LuxI will consecutively produce AHL, which binds with LuxR. The newly formed complex will then activate the production of leucine and Ag43. Leucine and AHL are also able to diffuse out of the cell into the medium. Ag43 is the adhesine which aids the aggregation of cells A, while leucine and AHL are necessary to repel cells B.</p>
+            <p class="content">Generally speaking, this is a quorum sensing control switch activated by light induction. LuxI and LuxR are the molecules used in quorum sensing. Much protein transcription and translation are involved in the induction system.</p>
+            <div class="fig1">
+                <img src="../assets/ModelHW.png" alt="" class="biodesign">
+                <p class="figtitle">
+                    <strong>
+                        <b>Figure 1 signal path</b>
+                    </strong>
+                </p>
+                </div>
+            <div class="subhead">Model Solving</div>
+            <div class="fig1">
+                <img src="../assets/ModelHW1.png" alt="" class="biodesign">
+                <img src="../assets/ModelHW2.png" alt="" class="biodesign">
+                <img src="../assets/ModelHW3.png" alt="" class="biodesign">
+                <p class="figtitle">
+                    <strong>
+                        <b></b>
+                    </strong>
+                </p>
+                </div>
+            <div class="subhead">Result</div>
+            <p class="content">For cell A we made a simulation with cell A in the ON and OFF mode as visuable in figure 2. When cell A is in the OFF state, the whole designed circuit is in OFF mode. This means that the cI repressor is succesful in repressing the design. If the degradation rate of cI is raised to simulate the temperature rising, we see that all the components of the system show a big increase. For LuxR this increase is only temporary, but this is also explainable. Since LuxI keeps on producing AHL which binds LuxR to form a complex. Indeed all the LuxR reacts to form the complex.</p>
+            <div class="fig1">
+                <img src="../assets/ModelHW4.png" alt="" class="biodesign">
+                <p class="figtitle">
+                    <strong>
+                        <b>Figure 2 Result</b>
+                    </strong>
+                </p>
+                </div>
+        </section>
+        
         <div class="headline">参考文献</div>
         <div class="reference">
             [1]https://2019.igem.org/Team:Peking/Model#Regulatory<br> 
@@ -189,6 +226,9 @@
             margin-bottom: 20px !important;
             text-align: center!important;
             text-indent: 0 !important;
+            img{
+                width:33rem
+            }
         }
         .figtitle{
             color: #000;
@@ -245,6 +285,10 @@ export default {
                  {
                     name:"Light regulation",
                     id:"regulation-part"
+                 },
+                 {
+                      name:"Homework",
+                      id:"HW"
                  },
                  {
                      name:"Reference",

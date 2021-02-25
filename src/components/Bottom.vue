@@ -45,6 +45,7 @@ export default {
     .bottom{
         display: flex;
         height: 31.25rem;
+        width:70vw;
         justify-content: space-around;
         margin: 250px auto 0 auto;
         padding: 0 10rem 0 10rem;
