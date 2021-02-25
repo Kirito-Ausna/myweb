@@ -23,6 +23,7 @@
   import backtop from './components/Backtop'
   import myfooter from "./components/Myfooter"
   import Bottom from "/src/components/Bottom.vue"
+  
   export default {
     data () {
       return {

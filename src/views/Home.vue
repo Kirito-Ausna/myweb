@@ -10,7 +10,7 @@
 
         <div class="videoshow">
             <video muted width="1300px" :autoplay="true" controls loop>
-                <source src="http://47.98.210.49:82/download.mp4" type="video/mp4">
+                <source src="http://47.98.210.49:82/itisover!.mp4" type="video/mp4">
                 您的浏览器不支持 video 标签。
             </video>
             <!-- <iframe height=498 width=510 src='https://player.youku.com/embed/XMjkzNTUxNDY4' frameborder=0></iframe> -->
@@ -115,7 +115,7 @@ export default {
     .bgpic{
      width: 100%;
      height: 100vh;
-     background: url(../assets/HomeBg.jpeg) no-repeat;
+     background: url(../assets/HomeBg.png) no-repeat;
      position: relative;
      background-attachment: fixed;
      background-position: center;
