@@ -218,7 +218,7 @@
     .bgpic{
      width: 100%;
      height: 100vh;
-     background: url(../assets/HomeBg.jpeg) no-repeat;
+     background: url(../assets/hardwarebg.jpg) no-repeat;
      position: relative;
      background-attachment: fixed;
      background-position: center;

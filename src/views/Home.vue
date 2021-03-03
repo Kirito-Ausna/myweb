@@ -18,7 +18,7 @@
 
         <div class="mainpart">
             <div class="part1">
-            <img src="../assets/HomePic.jpg">
+            <img src="../assets/homepic1.jpg">
             <div>
                Locust plagues threaten agricultural and environmental safety throughout the world. To solve this problem, we design a project, which consists of two devices, one is aiming for detecting the number of locusts, and the other is designed for the aggregation and killing.
             </div>
@@ -27,10 +27,10 @@
             <div>
                 The detection device works through an olfactory receptor responding to 4VA, which is expressed in the cell-free system. The receptor and its co-receptor are loaded on the recombinant lipid bilayer. When detecting abnormally high 4VA, the electric signals will be converted into light signals, then trigger corresponding response in the other part.
             </div>
-            <img src="../assets/HomePic.jpg">
+            <img src="../assets/homepic2.jpg">
             </div>
             <div class="part1">
-            <img src="../assets/HomePic.jpg">
+            <img src="../assets/homepic3.jpg">
             <div>
                 The engineering bacteria of guaiacol synthesis will subsequently respond to the light signals, produce guaiacol, and then attract locusts. Bacillus subtilis is used as a chassis organism. Additionally, the oil spraying equipment of Metarhizium anisopliae is controlled by the light signal.
             </div>
@@ -39,10 +39,10 @@
             <div>
                 Once the 4VA in the air is higher than the normal value, the equipment will start spraying oil, infecting locusts, thus eliminating the incidence of locust plague.
             </div>
-            <img src="../assets/HomePic.jpg">
+            <img src="../assets/homepic4.jpg">
             </div>
             <div class="part1">
-            <img src="../assets/HomePic.jpg">
+            <img src="../assets/homepic5.jpg">
             <div>
                 For biosafety, we introduce a temperature-controlled suicide switch and an ultraviolet-controlled suicide switch, so the engineered bacteria will automatically die when exposed to low temperature or ultraviolet light.
             </div>

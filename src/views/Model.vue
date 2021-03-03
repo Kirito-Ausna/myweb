@@ -113,7 +113,6 @@
         <p class="content">Figure 2 illustrates the rapid conversion of CarH tetramer into CarH monomer after turning on green light. The RNA in the conditions is provided in a limited amount, which is to simulate the limitation of the number of engineering bacteria. With the consumption of CarH RNA, the amount of CarH monomer is slowly degraded. In summary, the light control effect is good.</p>
         <p class="content">Figure 3 is our further idea of the light control effect. In a certain period of time, we hope to increase the light intensity to control the engineered bacteria to express more target proteins. We used 3μ, 4μ, and 5μ light intensity respectively. It can be seen from the results that the light intensity does not affect the production rate of the terminal product, but it is possible to synthesize more target products in a longer time through a limited number of engineered bacterial populations.</p>
         </section>
-        <a class="anchor" name="Reference" id="Reference"></a>
         <section class="homework">
             <a class="anchor" name="Homework" id="HW"></a>
             <div class="headline">Homework</div>
@@ -150,7 +149,7 @@
                 </p>
                 </div>
         </section>
-        
+        <a class="anchor" name="Reference" id="Reference"></a>
         <div class="headline">参考文献</div>
         <div class="reference">
             [1]https://2019.igem.org/Team:Peking/Model#Regulatory<br> 
@@ -168,7 +167,7 @@
     .bgpic{
      width: 100%;
      height: 100vh;
-     background: url(../assets/HomeBg.jpeg) no-repeat;
+     background: url(../assets/modelbg.jpg) no-repeat;
      position: relative;
      background-attachment: fixed;
      background-position: center;
